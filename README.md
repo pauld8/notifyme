@@ -1,14 +1,8 @@
 # NotyMe
 Simple javascript pop-up notifications. jQuery is required.
 
-[![Build Status](https://travis-ci.org/CodeSeven/toastr.svg)](https://travis-ci.org/CodeSeven/toastr)
-Browser testing provided by BrowserStack.
-
 ## Current Version
 1.0.0
-
-## [CDNjs](https://cdnjs.com/libraries/toastr.js)
-Toastr is hosted at CDN JS
 
 ## Install
 
@@ -17,9 +11,7 @@ Toastr is hosted at CDN JS
 npm install --save notyme
 ```
 
-## Quick Start
-
-### 3 Easy Steps
+### Integration
 
 1. Link to notifications.css
 
@@ -29,8 +21,6 @@ npm install --save notyme
 	```js
 	$.notification('message', { options });
 	```
+
 ## Copyright
 Copyright © 2018
-
-## License
-NotyMe is under MIT license - http://www.opensource.org/licenses/mit-license.php
