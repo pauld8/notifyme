@@ -21,6 +21,29 @@ npm install --save notyme
 	```js
 	$.notification('message', { options });
 	```
+## Example
+```
+$.notification('Please fill out the missing details', {
+	type: 'danger',
+	allowClose: false,
+	onHide: function() {
+		// do something with the form... etc
+	}
+});
+```
+	
+### Default options
+
+```
+$.notification.defaults = {
+	type: 'success',
+	allowClose: true,
+	timeout: 5000,
+	maxWidth: 500,
+	onHide: null,
+	onShow: null
+};
+```
 
 ## Copyright
 Copyright © 2018
