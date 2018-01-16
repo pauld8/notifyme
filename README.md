@@ -22,7 +22,7 @@ npm install --save notyme
 	$.notification('message', { options });
 	```
 ## Example
-```
+```js
 $.notification('Please fill out the missing details', {
 	type: 'danger',
 	allowClose: false,
@@ -34,7 +34,7 @@ $.notification('Please fill out the missing details', {
 	
 ### Default options
 
-```
+```js
 $.notification.defaults = {
 	type: 'success',
 	allowClose: true,
