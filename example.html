@@ -8,23 +8,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="dist/notifications.css">
     <style>
-        * {
-            font-family: Lato;
-        }
+        * {font-family: Lato;}
     </style>
 </head>
 <body>
 
-
-<button id="test">test</button>
+<button id="test">Notify Me</button>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="dist/notifications.js"></script>
 <script>
     $('button#test').on('click', function () {
-        $.notification("Hello world", {
-            type: 'danger',
-            timeout: 555555
+        $.notification("Notify Me", {
+            type: 'success',
+            timeout: 5000
         });
     })
 </script>
