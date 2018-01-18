@@ -1,0 +1,22 @@
+{
+  "name": "notifyme",
+  "version": "1.0.0",
+  "description": "Simple popup jQuery notification plugin",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauld8/notifyme.git"
+  },
+  "author": "Paul Diamant",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pauld8/notifyme/issues"
+  },
+  "homepage": "https://github.com/pauld8/notifyme#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

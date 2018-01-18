@@ -1,0 +1,90 @@
+@keyframes slideInNotification {
+  from {
+    transform: scale(0.8);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+
+.notification {
+  transform: scale(1);
+  box-sizing: border-box;
+  opacity: 1;
+  z-index: 99999999;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  transition: all .1s linear;
+  will-change: transform, opacity;
+  animation-fill-mode: both;
+  animation: slideInNotification 0.15s linear; }
+  @media all and (max-width: 600px) {
+    .notification {
+      top: 0 !important;
+      left: 0 !important;
+      width: 100%;
+      margin: 0 !important; } }
+  @media all and (min-width: 601px) {
+    .notification {
+      top: 15px;
+      left: 50%; } }
+  .notification div.close {
+    position: absolute;
+    top: 3px;
+    right: 3px; }
+  .notification.success {
+    background-color: #1ccc51; }
+  .notification.warning {
+    background-color: #f1c513; }
+  .notification.info {
+    background-color: #32a0db; }
+  .notification.danger {
+    background-color: #F55555; }
+  .notification.out {
+    transform: scale(0.8);
+    opacity: 0; }
+  .notification ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+
+.close {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  cursor: pointer; }
+
+.close:before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  height: 0;
+  border-top: 1.5px solid #fff;
+  transform: rotate(45deg);
+  transform-origin: center; }
+
+.close:after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  height: 0;
+  border-top: 1.5px solid #fff;
+  transform: rotate(-45deg);
+  transform-origin: center; }
